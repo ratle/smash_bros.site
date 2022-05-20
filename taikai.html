@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>スマブラオフ大会掲示板</title>
+    <script>
+        
+    </script>
+    <style>
+    #border-radius {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #abc;
+  border-radius: 30px;
+  text-align: center;
+}
+#info{
+    width:350px;
+    height:500px;
+    right:100px;
+    position: relative;
+}
+h1 {
+    font-weight: normal;
+    padding-bottom: 15px;
+    text-align: center;
+    position: relative;
+    margin: 0px 0 10px 0;
+    letter-spacing: 5px;
+    top:-10px;
+    color: #388;
+    font-size:260%;
+}
+#subtitle {
+    width: 70%;
+    line-height: 1;
+    display: inline-block;
+    padding: 50px;
+    position: relative;
+    z-index: 999;
+    margin: 5px 0 0;
+    color: #113566;
+    letter-spacing: 1px;
+    font-size:30px;
+    text-align:left;
+    right:50px;
+    margin:0px;
+}
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    color: #737373;
+    padding: 50px;
+    border: solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 0px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+    background-color:#aaaaaa;
+}
+/***トップへ戻るボタンここまで***/
+
+ 
+h1::after {
+    content: "";
+    display: block;
+    border-bottom: solid 5px #2196F3;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0px;
+}
+ 
+
+ 
+body {
+    padding: 50px 80px 80px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    height:3000px;
+    position: relative;
+ 
+}
+ 
+
+.betsu {
+        background-color: #fff;
+    padding: 50px 80px 80px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    position: relative;
+    height:3000px;
+}
+#home {
+    color: #fff;
+    text-decoration: none;
+    background-color: #bfccef;
+    display: center;
+    padding: 10px 10px;
+    border-radius: 3px;
+    box-shadow: 0 4px 0 0 #aaccee;
+    font-weight: bold;
+    width: 29%;
+    text-align: center;
+    margin: 3px auto 0;
+    letter-spacing: 1px;
+    float: left;
+    margin-right: 10px;
+    font-size: 130%;
+    left:30px;
+}
+.button06 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #bbbbbb;
+  box-shadow: 0 0 10px rgba(0 0 0 / .2);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.button06 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button06 a:hover {
+  text-decoration: none;
+  background-color: #aaaaaa;
+  box-shadow: 0 0 10px rgba(0 0 0 / 0);
+}
+</style>
+</head>
+<header>
+  <nav>
+  </nav>
+</header>
+<body><img src="r.jpeg"    width="100%" height="10%" display="inline-block" vertical-align="left" position="relative" text-align="left">
+    <br><br>
+
+      <h1 class="home">スマブラ大会掲示板</h1>
+    <a href="#" id="page-top">TOP<i class="blogicon-chevron-up"></i></a>
+    <a href="home.html" id="home">ホーム</a>   <a href="taikai.html" id="home">オフ大会を探す</a> <a href="qanda.html" id="home">Q&A</a>  
+     <br><br><br>
+     <p id="subtitle">都道府県から探す</p>
+     <div class="button06" style="float:left;">
+     	<a href="kantou.html">関東地方</a>
+     	<a href="kyuusyuu.html">九州地方</a>
+     	<a href="kansai.html">関西地方</a>
+     	<a href="touhoku.html">北海道・東北地方</a>
+     	<a href="kinki.html">近畿地方</a>
+     	<a href="chuubu.html">中部地方</a>
+     </div>
+    <br>
+        <br>
+     <p id="subtitle">タグから探す</p>
+     <div class="button06" style="float:left;">
+        <a href="tag1.html">タグ1</a>
+        <a href="tag2.html">タグ2</a>
+        <a href="tag3.html">タグ3</a>
+        <a href="tag4.html">タグ4</a>
+        <a href="tag5.html">タグ5</a>
+        <a href="tag6.html">タグ6</a>
+     </div>
+    <br>
+　　      <br>
+     <p id="subtitle">曜日から探す</p>
+     <div class="button06" style="float:left;">
+        <a href="getu.html">月曜日</a>
+        <a href="ka.html">火曜日</a>
+        <a href="sui.html">水曜日</a>
+        <a href="moku.html">木曜日</a>
+        <a href="kin.html">金曜日</a>
+        <a href="do.html">土曜日</a>
+        <a href="nichi.html">日曜日</a>
+     </div>
+    <br>
+</div>
+</body>
+
+</html>

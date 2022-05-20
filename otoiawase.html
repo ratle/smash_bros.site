@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>スマブラオフ大会掲示板</title>
+    <script>
+        
+    </script>
+    <style>
+    #border-radius {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #abc;
+  border-radius: 30px;
+  text-align: center;
+}
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #545454;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+#info{
+    width:350px;
+    height:500px;
+    right:100px;
+    position: relative;
+}
+h1 {
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    margin: 0px 0 10px 0;
+    letter-spacing: 5px;
+    top:-10px;
+    color: #388;
+}
+#subtitle {
+    width: 70%;
+    line-height: 1;
+    display: inline-block;
+    padding: 50px;
+    position: relative;
+    z-index: 999;
+    margin: 5px 0 0;
+    color: #113566;
+    letter-spacing: 1px;
+    font-size:30px;
+    text-align:left;
+    right:50px;
+    margin:0px;
+}
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    color: #737373;
+    padding: 50px;
+    border: solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 0px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+    background-color:#aaaaaa;
+}
+/***トップへ戻るボタンここまで***/
+
+ 
+h1::after {
+    content: "";
+    display: block;
+    border-bottom: solid 5px #2196F3;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0px;
+}
+ 
+html {
+}
+ 
+body {
+    padding: 50px 80px 80px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    height:3000px;
+    position: relative;
+ 
+}
+ 
+
+.betsu {
+        background-color: #fff;
+    padding: 50px 80px 80px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    position: relative;
+    height:3000px;
+}
+#home {
+    color: #fff;
+    text-decoration: none;
+    background-color: #bfccef;
+    display: block;
+    padding: 5px 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 0 0 #aaccee;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    margin: 3px auto 0;
+    letter-spacing: 1px;
+    float: left;
+    margin-right: 5px;
+}
+
+</style>
+</head>
+<header>
+  <nav>
+  </nav>
+</header>
+<body><img src="r.jpeg"    width="650" height="250" display="inline-block" vertical-align="left" position="relative" text-align="left">
+    <br><br>
+
+      <h1 class="home">スマブラ大会掲示板</h1>
+    <a href="#" id="page-top">TOP<i class="blogicon-chevron-up"></i></a>
+    <a href="home.html" id="home">ホーム</a>   <a href="taikai.html" id="home">オフ大会を探す</a> <a href="qanda.html" id="home">Q&A</a>  <a href="otoiawase.html" id="home">お問い合わせ</a>
+     <br>
+     <p id="subtitle" style="margin:0">お問い合わせ</p>
+
+    <div class="Form" style="margin:0">
+  <div class="Form-Item">
+    <p class="Form-Item-Label">お名前</p>
+    <input type="text" class="Form-Item-Input" placeholder="例）スマ田ブラ男">
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label">ご年齢</p>
+    <input type="text" class="Form-Item-Input" placeholder="例) 51歳">
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label">メールアドレス</p>
+    <input type="email" class="Form-Item-Input" placeholder="例）sumabura@ultimate.com">
+  </div>
+  <div class="Form-Item">
+    <p class="Form-Item-Label isMsg">お問い合わせ内容</p>
+    <textarea class="Form-Item-Textarea"></textarea>
+  </div>
+  <input type="submit" class="Form-Btn" value="送信する">
+</div>
+</body>
+
+</html>
